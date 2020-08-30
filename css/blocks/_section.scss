@@ -1,0 +1,23 @@
+$color:#666666;
+.section{
+    height: 100vh;
+    text-align: center;
+    .container{
+        width: 80vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+.section__title{
+    font-style: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+.section__text{
+ width: 50%;
+ padding-bottom: 62px;
+ color: $color;}

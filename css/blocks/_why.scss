@@ -1,0 +1,55 @@
+$color:#666666;
+.why__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+$width:128px;
+
+.why__item{
+    $padding:84px;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: $padding;
+    &:last-child{padding-right: 0px;
+    &:after{
+        content: '';}
+};
+    &:after{
+        content: url(./../../image/Combined.png);
+        position: absolute;
+        right: $padding/2;
+        top:$width/2;
+        transform: translate(50%);
+    }
+
+
+}
+.why__img{
+    position: relative;
+    background: #F2F5F4;
+    width: $width;
+    height: $width;
+    border-radius: 50%;
+}
+.why__icon{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+    width: 60px;
+    height: 60px;
+}
+.why__subtitle{
+    padding-top: 24px;
+    padding-bottom: 7px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.why__text{
+    color: $color;
+}
