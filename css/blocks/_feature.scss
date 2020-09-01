@@ -1,0 +1,17 @@
+.feature{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.feature__item{
+    display: flex;
+}
+.feature__logo{
+    height: 36px;
+    width: 36px;
+    margin-right: 20px;
+    &:last-child{margin-right: 0;}
+}
+.feature__text{
+    max-width: 114px;
+}

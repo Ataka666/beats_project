@@ -6,7 +6,7 @@
     background-color: #F5F5F5;
 
     .container{
-        width: 80vw;
+        width: 1100px;
         height: 100%;
         display: flex;
         flex-direction: column;  
@@ -28,21 +28,4 @@
 .main__text{
     font-size: 21px;
     padding-bottom: 36px;
-}
-.main__list{
-    display: flex;
-    width: 60%;
-    justify-content: space-between;
-}
-.main__item{
-    display: flex;
-}
-.main__logo{
-    height: 36px;
-    width: 36px;
-    margin-right: 20px;
-    &:last-child{margin-right: 0;}
-}
-.main__feature{
-    max-width: 114px;
 }

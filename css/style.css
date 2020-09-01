@@ -350,6 +350,7 @@ html, body {
   font-family: "Play";
   font-size: 18px;
   color: #292929;
+  overflow: hidden;
 }
 
 .container {
@@ -384,14 +385,14 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 30px;
 }
 
-.header__list {
-  display: flex;
+.menu__list {
+  display: inline-flex;
 }
 
-.header__item {
+.menu__item {
   margin-right: 27px;
 }
-.header__item:last-child {
+.menu__item:last-child {
   margin-right: 0px;
 }
 
@@ -403,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #F5F5F5;
 }
 .main .container {
-  width: 80vw;
+  width: 1100px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -426,29 +427,6 @@ h1, h2, h3, h4, h5, h6 {
 .main__text {
   font-size: 21px;
   padding-bottom: 36px;
-}
-
-.main__list {
-  display: flex;
-  width: 60%;
-  justify-content: space-between;
-}
-
-.main__item {
-  display: flex;
-}
-
-.main__logo {
-  height: 36px;
-  width: 36px;
-  margin-right: 20px;
-}
-.main__logo:last-child {
-  margin-right: 0;
-}
-
-.main__feature {
-  max-width: 114px;
 }
 
 .why__list {
@@ -576,9 +554,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 74px;
   border-radius: 50%;
   overflow: hidden;
+  border: 4px solid transparent;
+}
+.review__link:hover {
+  border-color: #E01F3D;
 }
 .review__link--active {
-  border: 4px solid;
   border-color: #E01F3D;
 }
 
@@ -612,6 +593,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   margin-bottom: 11px;
 }
+.form__row:last-child {
+  margin-bottom: 0px;
+}
 
 .form__block {
   flex: 1;
@@ -627,9 +611,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 12px 20px;
   background: white;
   border-radius: 4px;
+  border: 3px solid transparent;
 }
 .form__input:focus {
-  border: 3px solid #E01F3D;
+  border-color: #E01F3D;
   outline: none;
 }
 .form__input--textarea {
@@ -657,6 +642,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
+  margin-bottom: 24px;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -695,12 +681,11 @@ h1, h2, h3, h4, h5, h6 {
 .radio__title {
   margin-left: 10px;
   margin-right: 16px;
-  margin-bottom: 24px;
 }
 
 .button {
   font-size: 16px;
-  display: block;
+  display: inline-block;
   padding: 18px 41px;
   border-Radius: 100px;
   width: 163px;
@@ -780,4 +765,27 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.feature {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.feature__item {
+  display: flex;
+}
+
+.feature__logo {
+  height: 36px;
+  width: 36px;
+  margin-right: 20px;
+}
+.feature__logo:last-child {
+  margin-right: 0;
+}
+
+.feature__text {
+  max-width: 114px;
 }
