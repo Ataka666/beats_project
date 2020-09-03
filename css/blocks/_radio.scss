@@ -7,7 +7,7 @@
         .radio__visible{
             border-radius: 0;
             &::before{
-                background: url(./../../image/check.png) center center no-repeat;
+                background: url(./../image/check.png) center center no-repeat;
             }
         }
     }

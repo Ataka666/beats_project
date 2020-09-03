@@ -2,7 +2,7 @@
     height: 100vh;
     background-image: url(./../image/Ellipse.png);
     background-repeat: no-repeat;
-    background-position: right 40px bottom 52px;
+    background-position: right 98px center;
     background-color: #F5F5F5;
 
     .container{
@@ -19,13 +19,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 40%;
 }
 .main__title{
     font-size: 48px;
     padding-bottom: 22px;
+    text-transform: uppercase;
+
 }
 .main__text{
     font-size: 21px;
     padding-bottom: 36px;
+    width: 90%
 }

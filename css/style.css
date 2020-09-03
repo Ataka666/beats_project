@@ -396,11 +396,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0px;
 }
 
+.address__number {
+  font-size: 18px;
+  font-style: normal;
+}
+
+.address__logo {
+  max-width: 100%;
+  height: 14px;
+  width: 14px;
+}
+
 .main {
   height: 100vh;
   background-image: url(./../image/Ellipse.png);
   background-repeat: no-repeat;
-  background-position: right 40px bottom 52px;
+  background-position: right 98px center;
   background-color: #F5F5F5;
 }
 .main .container {
@@ -416,17 +427,19 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 40%;
 }
 
 .main__title {
   font-size: 48px;
   padding-bottom: 22px;
+  text-transform: uppercase;
 }
 
 .main__text {
   font-size: 21px;
   padding-bottom: 36px;
+  width: 90%;
 }
 
 .why__list {
@@ -571,7 +584,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section--form {
-  background: url(./../image/form.png) center top no-repeat;
+  background: url(./../image/form.png) center no-repeat;
   color: white;
   padding-top: 68px;
 }
@@ -648,7 +661,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(./../../image/check.png) center center no-repeat;
+  background: url(./../image/check.png) center center no-repeat;
 }
 
 .radio__elem {
@@ -710,7 +723,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 .section .container {
-  width: 80vw;
+  width: 1100px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -769,7 +782,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .feature {
   display: flex;
-  width: 60%;
+  width: 54%;
   justify-content: space-between;
 }
 
@@ -780,7 +793,7 @@ h1, h2, h3, h4, h5, h6 {
 .feature__logo {
   height: 36px;
   width: 36px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .feature__logo:last-child {
   margin-right: 0;

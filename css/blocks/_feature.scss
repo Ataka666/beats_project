@@ -1,6 +1,6 @@
 .feature{
     display: flex;
-    width: 60%;
+    width: 54%;
     justify-content: space-between;
 }
 .feature__item{
@@ -9,7 +9,7 @@
 .feature__logo{
     height: 36px;
     width: 36px;
-    margin-right: 20px;
+    margin-right:10px;
     &:last-child{margin-right: 0;}
 }
 .feature__text{
