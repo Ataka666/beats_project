@@ -1,5 +1,21 @@
 @mixin media{
+    .hamburger{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 26px;
+    height: 30px;
+    background-color: #292929;
+    }
+    .hamburger__line{
+        display: block;
+        height: 4px;
+        border-radius: 1px;
+    }
     .menu__list{
+        display: none;
+    }
+    .address{
         display: none;
     }
     .main__block{
@@ -44,12 +60,6 @@
     h1,h2{
         font-size: 48px;
     }
-    .section{
-        height: 1000px;
-    }
-    .main{
-        min-height: 1000px;
-    }
     .review__article{
         text-align: center;
         margin: 1,5rem;
@@ -63,15 +73,9 @@
     h1,h2{
         font-size: 32px;
     }    
-    .section{
-        height: 800px;
-    }
     .section__text{
         padding-bottom: auto;
-    }  
-    .main{
-        min-height: 800px;
-    }  
+    }   
     .why__list{
         flex-wrap: wrap;
     }

@@ -4,11 +4,11 @@
     padding-top: 30px;
 }
 .menu__list{
-    display: inline-flex;   
+    display: inline-flex;  
+    flex-wrap: wrap; 
 }
 .menu__item{
-    flex-wrap: wrap;
-    margin-right: 27px;
+   margin-right: 27px;
     &:last-child{
         margin-right: 0px;
     }
