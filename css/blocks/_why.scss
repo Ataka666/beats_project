@@ -4,10 +4,10 @@ $color:#666666;
     justify-content: space-between;
 }
 
-$width:128px;
+$width:8rem;
 
 .why__item{
-    $padding:84px;
+    $padding:5.25rem;
     position: relative;
     flex: 1;
     display: flex;
@@ -41,13 +41,16 @@ top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
 
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
+}
+.why__description{
+    flex: 1;
 }
 .why__subtitle{
-    padding-top: 24px;
-    padding-bottom: 7px;
-    font-size: 24px;
+    padding-top: 1.5rem;
+    padding-bottom: 0.4375rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .why__text{

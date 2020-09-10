@@ -9,11 +9,12 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
             <section class="main">
                 <div class="container">
                     <header class="header">
-                            <div class="logo"><img src="./image/logo.png" alt="" class="logo__img"></div>
+                            <div class="logo"><svg class="logo__img"> 
+                                <use xlink:href='./image/svg-sprite.svg#logo'></use>
+                            </svg></div>
                             <nav class='menu'>
                                 <ul class="menu__list">
                                     <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
@@ -26,7 +27,10 @@
                                 </ul>
                            </nav>
                            <address class="address">
-                               <img src="./image/Vector (1).png" alt="" class="address__logo">
+                               <svg class="address__logo">
+                                   <use xlink:href=./image/svg-sprite.svg#phone></use>
+                               </svg>
+
                                <a href="tel:88007003030" class="address__number">8 800 700 30 30</a></address>
                     </header>
                     <div class="main__block">
@@ -40,19 +44,23 @@
                     <ul class="feature">
                         <li class="feature__item">
                             <div class="feature__logo">
-                                <img src="./image/main-1.png" alt="" class="ear">
+                                <svg class="ear">
+                                    <use xlink:href=./image/svg-sprite.svg#ear></use>
+                                </svg>
                             </div>
                             <div class="feature__text">Безупречный звук</div>
                         </li>
                         <li class="feature__item">
                             <div class="feature__logo">
-                                <img src="./image/charging 1.png" alt="" class="charge">
+                                <svg class="charging">
+                                    <use xlink:href=./image/svg-sprite.svg#charging></use>
+                                </svg>
                             </div>
                             <div class="feature__text">До 40 часов работы</div>
                         </li>
                         <li class="feature__item">
                             <div class="feature__logo">
-                                <img src="./image/Group (1).png" alt="" class="plug">
+                                <svg class="plug"><use xlink:href=./image/svg-sprite.svg#plug></use></svg>
                             </div>
                             <div class="feature__text">Технология Fast Fuel</div>
                         </li>
@@ -66,28 +74,35 @@
                         подключать наушники к различным устройствам Apple.</p></div>
                     <ul class="why__list">
                         <li class="why__item"><div class="why__img">
-                            <img src="./image/feat-1.png" alt="" class="why__icon">
+                            <svg class="why__icon"><use xlink:href=./image/svg-sprite.svg#battery></use></svg>
                         </div>
-                            <div class="why__subtitle">40 часов работы</div>
-                            <div class="why__text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день.</div></li>
-                        <li class="why__item"><div class="why__img">
-                            <img src="./image/feat-2.png" alt="" class="why__icon">
-                        </div>
-                            <div class="why__subtitle">
-                                Фирменное звучание
+                            <div class='why__description'>
+                                <div class="why__subtitle">40 часов работы</div>
+                                <div class="why__text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день.</div>
                             </div>
-                            <div class="why__text">Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились.</div></li>
+                        </li>
                         <li class="why__item"><div class="why__img">
-                            <img src="./image/Group.png" alt="" class="why__icon">
+                            <svg class="why__icon"><use xlink:href=./image/svg-sprite.svg#sound></use></svg>
                         </div>
-                            <div class="why__subtitle">
-                                Быстрая зарядка
-                            </div>
-                            <div class="why__text">Благодаря технологии Fast Fuel всего через 5 минут зарядки вы сможете слушать музыку ещё 3 часа.</div></li>
+                            <div class='why__description'>
+                                <div class="why__subtitle">
+                                    Фирменное звучание
+                                </div>
+                                <div class="why__text">Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились.</div>
+                            </div></li>
+                        <li class="why__item"><div class="why__img">
+                            <svg class="why__icon"><use xlink:href=./image/svg-sprite.svg#time></use></svg>
+                        </div>
+                            <div class='why__description'>
+                                <div class="why__subtitle">
+                                    Быстрая зарядка
+                                </div>
+                                <div class="why__text">Благодаря технологии Fast Fuel всего через 5 минут зарядки вы сможете слушать музыку ещё 3 часа.</div>
+                            </div></li>
                     </ul>
                 </div>
             </section>
-            <section class="beats">
+            <!-- <section class="beats">
                 <div class="container">
                     <img src="" alt="" class="beats__img">
                     <div class="beats__description">
@@ -150,7 +165,7 @@
                         <div class="color__description"></div></li>
                     <li class="color__item"><div class="color__description"></div></li>
                 </ul>
-            </section>
+            </section> -->
             <section class="section">
                <div class="container">
                     <h2 class="section__title">Отзывы</h2>
@@ -158,7 +173,7 @@
                         <div class="review__img"><img src="./image/review.jpg" alt="" class="review__person"></div>
                         <article class="review__article">
                             <div class="review__title">Отличный звук</div>
-                            <div class="review__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером  и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </div>
+                            <div class="review__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </div>
                             <div class="review__name">Беляш</div>
                         </article>
                     </div>

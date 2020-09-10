@@ -2,7 +2,7 @@
     display: flex;
     cursor: pointer;
     user-select: none;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     &--checkbox{
         .radio__visible{
             border-radius: 0;
@@ -21,16 +21,16 @@
     }
 }
 .radio__visible{
-    width: 26px;
-    height: 26px;
+    width: 1.625rem;
+    height: 1.625rem;
     border-radius: 50%;
     position: relative;
     background:white;
     &:before{
         content: '';
         position: absolute;
-        width: 14px;
-        height: 14px;
+        width: 0.875rem;
+        height: 0.875rem;
         background: #E01F3D;
         border-radius: 50%;
         top: 50%;
@@ -40,6 +40,6 @@
     }
 }
 .radio__title{
-    margin-left: 10px;
-    margin-right: 16px;  
+    margin-left: 0.625rem;
+    margin-right: 1rem;  
 }
