@@ -5,7 +5,11 @@
 }
 .menu__list{
     display: inline-flex;  
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    justify-content: center;
+    @include tablets{
+        display: none;
+    } 
 }
 .menu__item{
    margin-right: 27px;
@@ -22,6 +26,11 @@
 }
 .address{
     white-space: nowrap;
+    &--header{
+        @include tablets{
+            display: none;
+        }
+    }
 }
 .address__number{
     font-size: 1.125rem;

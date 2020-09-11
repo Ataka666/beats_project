@@ -2,9 +2,16 @@ $black:#292929;
 *{
     box-sizing: border-box;
 }
+
 html,body{
     height: 100%;
     font-size: 18px;
+    @include tablets{
+        font-size:15px
+    }
+    @include phone{
+        font-size: 14px;
+    }
 }
 .wrapper{
     font-family: 'Play';

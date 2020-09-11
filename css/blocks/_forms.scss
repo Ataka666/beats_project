@@ -6,12 +6,23 @@
 .form{
     margin-top: 3.75rem;
     display: flex;
-
+ @include tablets{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+ }
+ @include phone{
+     padding: 0px;
+ }
 }
 .form__col{
     flex: 1;
     margin-right: 1.6875rem;
     &:last-child{margin-right: 0px;}
+    @include tablets{
+        margin-right: 0px;
+        margin-top: 16px;
+    }
 }
 .form__row{
     display: flex;
@@ -44,6 +55,9 @@
 .form__controls{
     display: flex;
     flex-wrap: wrap;
+    @include tablets{
+        justify-content: center;
+    }
 }
 .form__title{
     text-align: left;
@@ -52,4 +66,7 @@
 .form__button{
     display: flex;
     margin-top: 3rem;
+    @include tablets{
+        justify-content: center;
+    }
 }

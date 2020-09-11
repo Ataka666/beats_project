@@ -1,3 +1,4 @@
+@import './media';
 @import "./layout/_normalize.scss";
 @import "./layout/_base.scss";
 @import "./blocks/header";
@@ -10,5 +11,7 @@
 @import './blocks/section';
 @import './blocks/fixed';
 @import './blocks/feature';
-@import './media';
-@import './blocks/hamburger'
+@import './blocks/hamburger';
+@import'./blocks/footer';
+@import './blocks/map';
+@import './blocks/social';

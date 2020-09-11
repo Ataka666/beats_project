@@ -2,6 +2,10 @@ $color:#666666;
 .why__list{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @include phone{
+        flex-direction: column;
+    }
 }
 
 $width:8rem;
@@ -14,6 +18,10 @@ $width:8rem;
     flex-direction: column;
     align-items: center;
     padding-right: $padding;
+    @include phone{
+        flex-direction: row;
+        padding: 5% 0px;
+    }
     &:last-child{padding-right: 0px;
     &:after{
         content: '';}
@@ -24,6 +32,9 @@ $width:8rem;
         right: $padding/2;
         top:$width/2;
         transform: translate(50%);
+        @include tablets{
+            display: none;
+        }
     }
 
 
@@ -46,12 +57,18 @@ transform: translate(-50%,-50%);
 }
 .why__description{
     flex: 1;
+    @include phone{
+        margin-left: 12px;
+        text-align: left;}
 }
 .why__subtitle{
     padding-top: 1.5rem;
     padding-bottom: 0.4375rem;
     font-size: 1.5rem;
     font-weight: bold;
+    @include phone{
+        padding-bottom: 0px;
+    }
 }
 .why__text{
     color: $color;
