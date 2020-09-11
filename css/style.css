@@ -446,7 +446,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main {
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-position: right 20% center;
   background-color: #F5F5F5;
