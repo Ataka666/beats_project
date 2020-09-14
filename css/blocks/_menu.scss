@@ -1,0 +1,38 @@
+.menu--overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+.menu__list{
+    display: inline-flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    @include tablets{
+        display: none;
+        &--overlay{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    } 
+}
+
+.menu__item{
+   margin-right: 27px;
+    &:last-child{
+        margin-right: 0px;
+    }
+    &--overlay{
+        color: #FFF;
+        font-size: 36px;
+        margin-bottom: 5%;
+        margin-right: 0px;
+        &:last-child{margin-bottom: 0px;}   
+    }
+}
+.menu__link{
+    white-space: nowrap;
+}

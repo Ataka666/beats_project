@@ -1,0 +1,73 @@
+
+.beat__description{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    flex-basis: 50%;
+
+}
+.beat__img{
+    width: 452px;
+    height: 452px;
+    @include tablets{
+        width: 306px;
+        height: 306px;
+    }
+}
+.beat__photo{
+    max-width: 100%;
+}
+.beat__text{
+    display: flex;
+    flex-direction: column;
+    @include tablets{
+        justify-content: center;
+        align-items: center;
+    }
+}
+.beat__title{
+font-weight: bold;
+font-size: 36px;
+text-transform: uppercase;
+@include tablets{
+    font-size: 28px;
+}}
+.beat__subtitle{
+    text-align: left;
+    color:#666666;
+    @include tablets{
+        text-align: center;
+    }
+}
+
+.beat__how{
+    font-weight: bold;
+    color: black;
+}
+.beat__price{
+    font-size: 36px;
+}
+.beat__characteristic{
+    padding-bottom: 24px;
+}
+.beat__list{
+    display: flex;
+    justify-content: left;
+}
+.beat__item{
+    margin-right: 86px;
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+.beat__buy{
+    display: flex;
+    justify-content: left;
+}
+.beat__feature{
+    color:#666666;
+}
+.beat__price{
+    margin-right: 13px;
+    color: #151515;
+}

@@ -4,6 +4,13 @@ $color:#666666;
     text-align: center;
     display: flex;
     align-items: center;
+    &--beat{
+        background: #F8FAF9;
+    }
+    &--form{
+        background: url(./../image/form.png) center no-repeat;
+        color: white;
+    }
     @include tablets{
         padding-top: 5%;}
     .container{
@@ -13,9 +20,19 @@ $color:#666666;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        &--beat{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+
+        }
         @include tablets{
             width: 90%;
             padding-bottom: 10%;
+            &--beat{
+                flex-direction: column;
+            }
         }
     }
 }

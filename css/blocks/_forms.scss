@@ -1,8 +1,4 @@
-.section--form{
-    background: url(./../image/form.png) center no-repeat;
-    color: white;
-    padding-top: 4.25rem;
-}
+
 .form{
     margin-top: 3.75rem;
     display: flex;
@@ -21,7 +17,8 @@
     &:last-child{margin-right: 0px;}
     @include tablets{
         margin-right: 0px;
-        margin-top: 16px;
+        &:last-child{
+            margin-top: 16px;}
     }
 }
 .form__row{

@@ -4,6 +4,8 @@
     display: none;
     @include tablets{
         display: inline-flex;
+        position: fixed;
+        right: 5%;
         flex-direction: column;
         justify-content: space-between;
         width: 26px;

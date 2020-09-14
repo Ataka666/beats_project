@@ -32,11 +32,27 @@
                                </svg>
 
                                <a href="tel:88007003030" class="address__number">8 800 700 30 30</a></address>
-                            <a href="" class="hamburger">
+                            <a href="" class="hamburger" id="hamburger">
                                    <span class="hamburger__line"></span>
                                    <span class="hamburger__line"></span>
                                    <span class="hamburger__line"></span>
                             </a>
+                            <div class="overlay" id="overlay">
+                                <div class="overlay__cross" id="cross"><svg class="cross">
+                                    <use xlink:href=./image/svg-sprite.svg#cross></use>
+                                </svg></div>
+                                <nav class='menu menu--overlay'>
+                                    <ul class="menu__list menu__list--overlay">
+                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">О нас</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">Наушники</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">Команда</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">Цвета</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">Отзывы</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">Контакты</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">Как мы работаем</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
                     </header>
                     <div class="main__section">
                         <div class="main__block">
@@ -49,7 +65,6 @@
                                 <img src="./image/Ellipse.png" alt="" class="main__logo">
                             </div>
                         </div>
-                        <!-- <div class="main__img"><img src="./image/3100dbf3f67350d2ec39f6108391887d.png" alt="" class="beats"></div> -->
                     </div>
                     <ul class="feature">
                         <li class="feature__item">
@@ -112,30 +127,38 @@
                     </ul>
                 </div>
             </section>
-            <!-- <section class="beats">
-                <div class="container">
-                    <img src="" alt="" class="beats__img">
-                    <div class="beats__description">
-                        <h2 class="beats__title">beats solo 3. цвет «атласное серебро»</h2>
-                        <div class="beats__text">
-                            <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+            <section class="section section--beat">
+                <div class="container container--beat">
+                    <div class='beat__img'>
+                        <img src="./image/beat.png" alt="" class="beat__photo">
+                    </div>
+                    <div class="beat__description">
+                        <h2 class="beat__title">beats solo 3. цвет «атласное серебро»</h2>
+                        <div class="beat__text">
+                            <div class="beat__subtitle">
+                                <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+                            </div>
+                            <div class="beat__characteristic">
+                            <ul class="beat__list">
+                                <li class="beat__item">
+                                    <div class="beat__feature">Зарядка</div>
+                                    <div class="beat__how">2 часа</div>
+                                </li>
+                                <li class="beat__item">
+                                    <div class="beat__feature">Вес</div>
+                                    <div class="beat__how">215 грамм</div>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="beat__buy">
+                            <div class="beat__price"><span>14990</span><span>Р</span></div>
+                            <a href="" class="button">Заказать</a>
+                            </div>
                         </div>
-                        <ul class="beats__list">
-                            <li class="beats__item">
-                                <div class="beats__feature"></div>
-                                <div class="beats__size"></div>
-                            </li>
-                            <li class="beats__item">
-                                <div class="beats__feature"></div>
-                                <div class="beats__size"></div>
-                            </li>
-                        </ul>
-                        <div class="beats__price"><span>14990</span><span>Р</span></div>
-                        <a href="" class="button">Заказать</a>
                     </div>
                 </div>
             </section>
-            <section class="team">
+            <!-- <section class="team">
                 <div class="container">
                     <h1 class="team__title">Команда</h1>
                     <ul class="team__list">
@@ -175,7 +198,7 @@
                         <div class="color__description"></div></li>
                     <li class="color__item"><div class="color__description"></div></li>
                 </ul>
-            </section> -->
+            </section> --> 
             <section class="section">
                <div class="container">
                     <h2 class="section__title">Отзывы</h2>
@@ -276,13 +299,13 @@
                         </div>
                         <ul class="social__list social__list--footer">
                             <li class="social__icon"><a class="social__link">
-                                <svg class="social__logo" xmlns="http://www.w3.org/2000/svg"><use xlink:href=./image/svg-sprite.svg#vk></use></svg>
+                                <svg class="social__logo" xmlns="http://www.w3.org/2000/svg"><use xlink:href=./image/svg-sprite.svg#in></use></svg>
                             </a></li>
                             <li class="social__icon"><a class="social__link">
                                 <svg class="social__logo" xmlns="http://www.w3.org/2000/svg"><use xlink:href=./image/svg-sprite.svg#fb></use></svg>
                             </a></li>
                             <li class="social__icon"><a class="social__link">
-                                <svg class="social__logo" xmlns="http://www.w3.org/2000/svg"><use xlink:href=./image/svg-sprite.svg#in></use></svg>
+                                <svg class="social__logo" xmlns="http://www.w3.org/2000/svg"><use xlink:href=./image/svg-sprite.svg#vk></use></svg>
                             </a></li>
                             <li class="social__icon"><a class="social__link">
                                 <svg class="social__logo" xmlns="http://www.w3.org/2000/svg"><use xlink:href=./image/svg-sprite.svg#tw></use></svg>
@@ -325,6 +348,6 @@
             </li>
         </ul>
     </nav>
-    
+    <script src="./js/slider.js"></script>
 </body>
 </html>
