@@ -907,9 +907,15 @@ h1, h2, h3, h4, h5, h6 {
   background: url(./../image/form.png) center no-repeat;
   color: white;
 }
+.section--map {
+  flex-direction: column;
+}
 @media screen and (max-width: 768px) {
   .section {
     padding-top: 5%;
+  }
+  .section--map {
+    padding-top: 0px;
   }
 }
 .section .container {
@@ -930,8 +936,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 90%;
     padding-bottom: 10%;
   }
-  .section .container--beat {
-    flex-direction: column;
+  .section .container--footer {
+    padding-bottom: 5%;
   }
 }
 
@@ -1064,8 +1070,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
+  flex: 1;
   width: 90%;
-  height: 5.375rem;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1079,8 +1086,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.map__img {
+  min-height: 80vh;
+  width: 100%;
+}
+
 .map {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -1119,11 +1131,29 @@ h1, h2, h3, h4, h5, h6 {
   fill: #000;
 }
 
+.beat__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .beat__wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.beat__arrow {
+  width: 14px;
+  height: 27px;
+}
+
 .beat__description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-basis: 50%;
+  flex-basis: 45%;
+  margin-left: 2%;
 }
 
 .beat__img {
@@ -1219,6 +1249,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   background: #313131;
   z-index: 100;
+  top: 0px;
 }
 @media screen and (max-width: 768px) {
   .overlay {

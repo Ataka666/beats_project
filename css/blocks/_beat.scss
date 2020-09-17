@@ -1,9 +1,23 @@
 
+.beat__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tablets{
+            flex-direction: column;
+            justify-content: center;
+    }
+}
+.beat__arrow{
+    width: 14px;
+height: 27px;
+}
 .beat__description{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    flex-basis: 50%;
+    flex-basis: 45%;
+    margin-left: 2%;
 
 }
 .beat__img{

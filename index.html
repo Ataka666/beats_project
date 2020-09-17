@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
     <title>Наушники Beats</title>
 </head>
 <body>
@@ -17,13 +20,13 @@
                             </svg></div>
                             <nav class='menu'>
                                 <ul class="menu__list">
-                                    <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">Наушники</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">Команда</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">Цвета</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">Как мы работаем</a></li>
+                                    <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+                                    <li class="menu__item"><a href="#beat" class="menu__link">Наушники</a></li>
+                                    <li class="menu__item"><a href="#team" class="menu__link">Команда</a></li>
+                                    <li class="menu__item"><a href="#color" class="menu__link">Цвета</a></li>
+                                    <li class="menu__item"><a href="#review" class="menu__link">Отзывы</a></li>
+                                    <li class="menu__item"><a href="#work" class="menu__link">Контакты</a></li>
+                                    <li class="menu__item"><a href="#map" class="menu__link">Как мы работаем</a></li>
                                 </ul>
                            </nav>
                            <address class="address address--header">
@@ -43,18 +46,18 @@
                                 </svg></div>
                                 <nav class='menu menu--overlay'>
                                     <ul class="menu__list menu__list--overlay">
-                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">О нас</a></li>
-                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">Наушники</a></li>
-                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">Команда</a></li>
-                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">Цвета</a></li>
-                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">Отзывы</a></li>
-                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">Контакты</a></li>
-                                        <li class="menu__item menu__item--overlay"><a href="" class="menu__link">Как мы работаем</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="#about" class="menu__link">О нас</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="#beat" class="menu__link">Наушники</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="#team" class="menu__link">Команда</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="#color" class="menu__link">Цвета</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="#review" class="menu__link">Отзывы</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="#work" class="menu__link">Контакты</a></li>
+                                        <li class="menu__item menu__item--overlay"><a href="#map" class="menu__link">Как мы работаем</a></li>
                                     </ul>
                                 </nav>
                             </div>
                     </header>
-                    <div class="main__section">
+                    <div class="main__section" id='about'>
                         <div class="main__block">
                             <div class="main__description">
                                 <h1 class="main__title">Беспроводные наушники Beats Solo 3</h1>
@@ -127,38 +130,71 @@
                     </ul>
                 </div>
             </section>
-            <section class="section section--beat">
-                <div class="container container--beat">
-                    <div class='beat__img'>
-                        <img src="./image/beat.png" alt="" class="beat__photo">
-                    </div>
-                    <div class="beat__description">
-                        <h2 class="beat__title">beats solo 3. цвет «атласное серебро»</h2>
-                        <div class="beat__text">
-                            <div class="beat__subtitle">
-                                <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
-                            </div>
-                            <div class="beat__characteristic">
-                            <ul class="beat__list">
-                                <li class="beat__item">
-                                    <div class="beat__feature">Зарядка</div>
-                                    <div class="beat__how">2 часа</div>
-                                </li>
-                                <li class="beat__item">
-                                    <div class="beat__feature">Вес</div>
-                                    <div class="beat__how">215 грамм</div>
-                                </li>
-                            </ul>
-                            </div>
-                            <div class="beat__buy">
-                            <div class="beat__price"><span>14990</span><span>Р</span></div>
-                            <a href="" class="button">Заказать</a>
+            <section class="section section--beat" id='beat'>
+                <div class="container container--beat slider">
+                    <!-- <div class="beat__arrow"><svg class="left"><use xlink:href=./image/svg-sprite.svg#left></use></svg></div> -->
+                    <div class="beat__wrapper">
+                        <div class='beat__img'>
+                            <img src="./image/beat.png" alt="" class="beat__photo">
+                        </div>
+                        <div class="beat__description">
+                            <h2 class="beat__title">beats solo 3. цвет «атласное серебро»</h2>
+                            <div class="beat__text">
+                                <div class="beat__subtitle">
+                                    <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+                                </div>
+                                <div class="beat__characteristic">
+                                <ul class="beat__list">
+                                    <li class="beat__item">
+                                        <div class="beat__feature">Зарядка</div>
+                                        <div class="beat__how">2 часа</div>
+                                    </li>
+                                    <li class="beat__item">
+                                        <div class="beat__feature">Вес</div>
+                                        <div class="beat__how">215 грамм</div>
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="beat__buy">
+                                <div class="beat__price"><span>14990</span><span>Р</span></div>
+                                <a href="" class="button">Заказать</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="beat__wrapper">
+                        <div class='beat__img'>
+                            <img src="./image/beat-sl.png" alt="" class="beat__photo">
+                        </div>
+                        <div class="beat__description">
+                            <h2 class="beat__title">beats solo 3. цвет «атласное серебро»</h2>
+                            <div class="beat__text">
+                                <div class="beat__subtitle">
+                                    <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+                                </div>
+                                <div class="beat__characteristic">
+                                <ul class="beat__list">
+                                    <li class="beat__item">
+                                        <div class="beat__feature">Зарядка</div>
+                                        <div class="beat__how">2 часа</div>
+                                    </li>
+                                    <li class="beat__item">
+                                        <div class="beat__feature">Вес</div>
+                                        <div class="beat__how">215 грамм</div>
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="beat__buy">
+                                <div class="beat__price"><span>14990</span><span>Р</span></div>
+                                <a href="" class="button">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="beat__arrow"><svg class="right"><use xlink:href=./image/svg-sprite.svg#right></use></svg></div> -->
                 </div>
             </section>
-            <!-- <section class="team">
+            <!-- <section class="team" id='team'>
                 <div class="container">
                     <h1 class="team__title">Команда</h1>
                     <ul class="team__list">
@@ -199,7 +235,7 @@
                     <li class="color__item"><div class="color__description"></div></li>
                 </ul>
             </section> --> 
-            <section class="section">
+            <section class="section" id="review">
                <div class="container">
                     <h2 class="section__title">Отзывы</h2>
                     <div class="review">
@@ -218,7 +254,7 @@
 
                </div>
             </section>
-            <section class="work">
+            <section class="work" id="work">
                 <div class="container">
                     <h2 class="work__title">Как мы работаем</h2>
                 </div>
@@ -284,11 +320,12 @@
                     </form>
                 </div>
             </section>
-            <section class="section__map">
-                <img src="./image/map.png" alt="" class="map">
+            <section class="section section--map" id='map'>
+                <div class="map__img">
+                    <img src="./image/map.png" alt="" class="map">
+                </div>
                 <div class="container container--footer">
                     <footer class="footer">
-
                         <div class="address">
                             <div class="address__location">Москва, ул.Новый Арбат, д.31/12</div> 
                             <div class="address__phone">
@@ -349,5 +386,6 @@
         </ul>
     </nav>
     <script src="./js/slider.js"></script>
+    <script src="./js/beat.js"></script>
 </body>
 </html>
