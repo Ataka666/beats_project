@@ -12,7 +12,10 @@ $color:#666666;
         color: white;
     }
     &--map{
-        flex-direction: column;
+        position: relative;
+        display: block;
+        height: 100vh;
+
     }
     @include tablets{
         padding-top: 5%;
@@ -26,6 +29,19 @@ $color:#666666;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        &--footer{
+            width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    @include phone{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+        }
         &--beat{
             flex-direction: row;
             align-items: center;
