@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/style.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./css/jquery.bxslider.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+   
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="./js/jquery.bxslider.js"></script> -->
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <title>Наушники Beats</title>
 </head>
 <body>
@@ -131,6 +133,10 @@
                 </div>
             </section>
             <section class="section section--beat" id='beat'>
+                <div class="beat__arrow">
+                    <a href="" class="beat__arrow-link beat__arrow--left"><svg class="left"> <use xlink:href=./image/svg-sprite.svg#left></use></svg></a>
+                    <a href="" class="beat__arrow-link beat__arrow--right"><svg class="right"> <use xlink:href=./image/svg-sprite.svg#right></use></svg></a>
+                </div>
                 <div class="container container--beat slider">
                     <div class="beat__wrapper">
                         <div class='beat__img'>
@@ -192,39 +198,145 @@
                     </div>
                 </div>
             </section>
-            <!-- <section class="team" id='team'>
+            <section class="section section--team" id='team'>
                 <div class="container">
-                    <h1 class="team__title">Команда</h1>
-                    <ul class="team__list">
-                        <li class="team__item">
-                            <div class="team__photo"><img src="" alt=""></div>
-                            <div class="team__name"></div>
-                            <div class="team__profession"></div>
-                        </li>
-                        <li class="team__item">
-                            <div class="team__photo"><img src="" alt=""></div>
-                            <div class="team__name"></div>
-                            <div class="team__profession"></div>
-                        </li>
-                        <li class="team__item">
-                            <div class="team__photo"><img src="" alt=""></div>
-                            <div class="team__name"></div>
-                            <div class="team__profession"></div>
-                        </li>
-                        <li class="team__item">
-                            <div class="team__photo"><img src="" alt=""></div>
-                            <div class="team__name"></div>
-                            <div class="team__profession"></div>
-                        </li>
-                        <li class="team__item">
-                            <div class="team__photo"><img src="" alt=""></div>
-                            <div class="team__name"></div>
-                            <div class="team__profession"></div>
-                        </li>
-                    </ul>
+                    <h1 class="section__title">Команда</h1>
+                    <div class="section__block">
+                        <ul class="team__list team__list--desktop">
+                            <li class="team__item">
+                                <div class="team__photo"><img src="./image/team1.png" alt="" class="photo"></div>
+                                <div class="team__member">
+                                    <a class="team__link">
+                                        <div class="team__name">Ольга Сергеевна</div>
+                                        <svg class="team__triangle">
+                                            <use xlink:href=./image/svg-sprite.svg#triangle></use>
+                                        </svg>
+                                    </a>
+                                    <div class="team__invisible">
+                                        <div class="team__profession">Главный технолог</div>
+                                        <div class="team__description">Отвечает за вкусовые качества 
+                                            и калорийность.
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__photo"><img src="./image/team2.png" alt="" class="photo"></div>
+                                <div class="team__member">
+                                    <a class="team__link">
+                                        <div class="team__name">Алла Иванова</div>
+                                        <svg class="team__triangle">
+                                            <use xlink:href=./image/svg-sprite.svg#triangle></use>
+                                        </svg>
+                                    </a>
+                                    <div class="team__invisible">
+                                        <div class="team__profession">Специалист по упаковке</div>
+                                        <div class="team__description">Автор запоминающегося стиля 
+                                            наших батончиков.
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__photo"><img src="./image/team3.png" alt="" class="photo"></div>
+                                <div class="team__member">
+                                    <a class="team__link">
+                                        <div class="team__name">Сергей Петров</div>
+                                        <svg class="team__triangle">
+                                            <use xlink:href=./image/svg-sprite.svg#triangle></use>
+                                        </svg>
+                                    </a>
+                                    <div class="team__invisible">
+                                        <div class="team__profession">Оператор</div>
+                                        <div class="team__description">Разработал дизан наушников beats solo 3.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__photo"><img src="./image/team4.png" alt="" class="photo"></div>
+                                <div class="team__member">
+                                    <a class="team__link">
+                                        <div class="team__name">Ольга Сергеевна</div>
+                                        <svg class="team__triangle">
+                                            <use xlink:href=./image/svg-sprite.svg#triangle></use>
+                                        </svg>
+                                    </a>
+                                    <div class="team__invisible"> 
+                                        <div class="team__profession">PR-маркетинг</div>
+                                        <div class="team__description">По всем вопросам сотрудничества 
+                                            и рекламы писать только Миле. 
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="team__list team__list--mobile">
+                            <li class="team__item">
+                                <a class="team__link">
+                                    <div class="team__name">Ольга Сергеевна</div>
+                                    <svg class="team__triangle">
+                                        <use xlink:href=./image/svg-sprite.svg#triangle></use>
+                                    </svg>
+                                </a>
+                                    <div class="team__invisible team__invisible--mobile">
+                                        <div class="team__photo"><img src="./image/team1.png" alt="" class="photo"></div>
+                                        <div class="team__profession">Главный технолог</div>
+                                        <div class="team__description">Отвечает за вкусовые качества 
+                                            и калорийность.
+                                            </div>
+                                    </div>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link">
+                                    <div class="team__name">Ольга Сергеевна</div>
+                                    <svg class="team__triangle">
+                                        <use xlink:href=./image/svg-sprite.svg#triangle></use>
+                                    </svg>
+                                </a>
+                                    <div class="team__invisible team__invisible--mobile">
+                                        <div class="team__photo"><img src="./image/team1.png" alt="" class="photo"></div>
+                                        <div class="team__profession">Главный технолог</div>
+                                        <div class="team__description">Отвечает за вкусовые качества 
+                                            и калорийность.
+                                            </div>
+                                    </div>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link">
+                                    <div class="team__name">Ольга Сергеевна</div>
+                                    <svg class="team__triangle">
+                                        <use xlink:href=./image/svg-sprite.svg#triangle></use>
+                                    </svg>
+                                </a>
+                                    <div class="team__invisible team__invisible--mobile">
+                                        <div class="team__photo"><img src="./image/team1.png" alt="" class="photo"></div>
+                                        <div class="team__profession">Главный технолог</div>
+                                        <div class="team__description">Отвечает за вкусовые качества 
+                                            и калорийность.
+                                            </div>
+                                    </div>
+                            </li>
+                            <li class="team__item">
+                                <a class="team__link">
+                                    <div class="team__name">Ольга Сергеевна</div>
+                                    <svg class="team__triangle">
+                                        <use xlink:href=./image/svg-sprite.svg#triangle></use>
+                                    </svg>
+                                </a>
+                                    <div class="team__invisible team__invisible--mobile">
+                                        <div class="team__photo"><img src="./image/team1.png" alt="" class="photo"></div>
+                                        <div class="team__profession">Главный технолог</div>
+                                        <div class="team__description">Отвечает за вкусовые качества 
+                                            и калорийность.
+                                            </div>
+                                    </div>
+                            </li>
+                           
+                        </ul>
+                    </div>
                 </div>
             </section>
-            <section class="color">
+            <!-- <section class="color">
                 <ul class="color__list">
                     <li class="color__item">
                         <div class="color__description"></div></li>
@@ -232,22 +344,40 @@
                         <div class="color__description"></div></li>
                     <li class="color__item"><div class="color__description"></div></li>
                 </ul>
-            </section> --> 
+            </section> -->
             <section class="section" id="review">
                <div class="container">
                     <h2 class="section__title">Отзывы</h2>
-                    <div class="review">
-                        <div class="review__img"><img src="./image/review.jpg" alt="" class="review__person"></div>
-                        <article class="review__article">
-                            <div class="review__title">Отличный звук</div>
-                            <div class="review__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </div>
-                            <div class="review__name">Беляш</div>
-                        </article>
-                    </div>
+                    <ul class="review">
+                        <li class="review__block review__block--active" data-linked-with="one">
+                            <div class="review__img"><img src="./image/review.jpg" alt="" class="review__person"></div>
+                            <article class="review__article">
+                                <div class="review__title">Отличный звук</div>
+                                <div class="review__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </div>
+                                <div class="review__name">Беляш</div>
+                            </article>
+                        </li>
+                        <li class="review__block" data-linked-with="two">
+                            <div class="review__img"><img src="./image/man.png" alt="" class="review__person"></div>
+                            <article class="review__article">
+                                <div class="review__title">Отличный звук</div>
+                                <div class="review__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </div>
+                                <div class="review__name">Беляш</div>
+                            </article>
+                        </li>
+                        <li class="review__block" data-linked-with="three">
+                            <div class="review__img"><img src="./image/woman.png" alt="" class="review__person"></div>
+                            <article class="review__article">
+                                <div class="review__title">Отличный звук</div>
+                                <div class="review__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </div>
+                                <div class="review__name">Беляш</div>
+                            </article>
+                        </li>
+                    </ul>
                     <ul class="review__list">
-                        <li class="review__item"><a href="" class="review__link review__link--active"><img src="./image/review.jpg" alt="" class="review__avatar review__avatar--active"></a></li>
-                        <li class="review__item"><a href="" class="review__link"><img src="./image/man.png" alt="" class="review__avatar"></a></li>
-                        <li class="review__item"><a href="" class="review__link"><img src="./image/woman.png" alt="" class="review__avatar"></a></li>
+                        <li class="review__item review__item--active"><a href="" class="review__link" data-open="one"><img src="./image/review.jpg" alt="" class="review__avatar review__avatar--active"></a></li>
+                        <li class="review__item"><a href="" class="review__link" data-open="two"><img src="./image/man.png" alt="" class="review__avatar"></a></li>
+                        <li class="review__item"><a href="" class="review__link" data-open="three"><img src="./image/woman.png" alt="" class="review__avatar"></a></li>
                     </ul>
 
                </div>
@@ -264,9 +394,9 @@
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block"><div class="form__title">Имя</div>
-                                <input type="text" class="form__input"></label>
+                                <input type="text" class="form__input" name="name" required></label>
                                 <label class="form__block"><div class="form__title">Фамилия</div>
-                                <input type="text" class="form__input"></label>
+                                <input type="text" class="form__input" name='lastName' required></label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block"><div class="form__title">Улица</div>
@@ -287,7 +417,7 @@
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block"><div class="form__title">Комментарий</div>
-                                <textarea class="form__input form__input--textarea"></textarea>
+                                <textarea class="form__input form__input--textarea" name="comment" required></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -310,7 +440,7 @@
                                 </label>
                             </div>
                             <div class="form__button">
-                                <input type="submit" value="Заказать" class="button">
+                                <input type="submit" value="Заказать" class="button" id='myButton'>
                                 <input type="reset" value="Очистить" class="button button--transparent">
                             </div>
                         </div>
@@ -383,7 +513,10 @@
             </li>
         </ul>
     </nav>
-    <script src="./js/slider.js"></script>
     <script src="./js/beat.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/team.js"></script>
+    <script src='./js/review.js'></script>
+    <script src='./js/form.js'></script>
 </body>
 </html>

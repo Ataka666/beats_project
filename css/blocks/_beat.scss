@@ -1,4 +1,8 @@
-
+.bx-wrapper{
+    box-shadow: none;
+    border: none;
+    background: #F8FAF9;
+}
 .beat__wrapper{
     display: flex;
     justify-content: center;
@@ -8,9 +12,19 @@
             justify-content: center;
     }
 }
-.beat__arrow{
+.beat__arrow-link{
+    display: block;
+    position: absolute;
     width: 14px;
-height: 27px;
+    height: 27px;
+    z-index: 10000;
+}
+.beat__arrow--left{
+    left: 2%;
+}
+.beat__arrow--right{
+
+    right: 2%;
 }
 .beat__description{
     display: flex;

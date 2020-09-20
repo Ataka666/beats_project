@@ -1,11 +1,25 @@
 .review{
     position: relative;
+    min-height: 280px;
+    background: #F8FAF9;
+}
+.review__block{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
     display: flex;
     background: #F8FAF9;
     padding: 2.625rem;
     margin-top: 2rem;
     margin-bottom: 0.9375rem;
     overflow: hidden;
+    &--active{
+        position: static;
+        opacity: 1;
+    }
     @include tablets{
         flex-direction: column;
         align-items: center;
@@ -68,21 +82,20 @@
 .review__item{
     margin-right: 0.4375rem;
     &:last-child{margin-right: 0;}
-
-}
-.review__link{
-    display: block;
-    width: 4.625rem;
-    height: 4.625rem;
+    border: 0.25rem solid transparent;
     border-radius: 50%;
     overflow: hidden;
-    border: 0.25rem solid transparent;
     &:hover{
         border-color: #E01F3D;
     }
     &--active{
     border-color: #E01F3D;
 }
+}
+.review__link{
+    display: block;
+    width: 4.625rem;
+    height: 4.625rem;
 }
 .review__avatar{
     width: 100%;
