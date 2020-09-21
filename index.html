@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
    
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
@@ -256,7 +255,7 @@
                                 <div class="team__photo"><img src="./image/team4.png" alt="" class="photo"></div>
                                 <div class="team__member">
                                     <a class="team__link">
-                                        <div class="team__name">Ольга Сергеевна</div>
+                                        <div class="team__name">Ольга Петровна</div>
                                         <svg class="team__triangle">
                                             <use xlink:href=./image/svg-sprite.svg#triangle></use>
                                         </svg>
@@ -288,7 +287,7 @@
                             </li>
                             <li class="team__item">
                                 <a class="team__link">
-                                    <div class="team__name">Ольга Сергеевна</div>
+                                    <div class="team__name">Ульяна Федоровна</div>
                                     <svg class="team__triangle">
                                         <use xlink:href=./image/svg-sprite.svg#triangle></use>
                                     </svg>
@@ -303,7 +302,7 @@
                             </li>
                             <li class="team__item">
                                 <a class="team__link">
-                                    <div class="team__name">Ольга Сергеевна</div>
+                                    <div class="team__name">Карл Петрович</div>
                                     <svg class="team__triangle">
                                         <use xlink:href=./image/svg-sprite.svg#triangle></use>
                                     </svg>
@@ -318,7 +317,7 @@
                             </li>
                             <li class="team__item">
                                 <a class="team__link">
-                                    <div class="team__name">Ольга Сергеевна</div>
+                                    <div class="team__name">Яков Аристархович</div>
                                     <svg class="team__triangle">
                                         <use xlink:href=./image/svg-sprite.svg#triangle></use>
                                     </svg>
@@ -391,12 +390,13 @@
                 <div class="container">
                     <h2 class="section__title">Закажите доставку</h2>
                     <form action="" class="form">
+                        <input type="hidden" name="to" value="ss@mail.ru">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block"><div class="form__title">Имя</div>
-                                <input type="text" class="form__input" name="name" required></label>
-                                <label class="form__block"><div class="form__title">Фамилия</div>
-                                <input type="text" class="form__input" name='lastName' required></label>
+                                <input type="text" class="form__input input--error" name="name"></label>
+                                <label class="form__block"><div class="form__title">Телефон</div>
+                                <input type="text" class="form__input input--error" name='phone'></label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block"><div class="form__title">Улица</div>
@@ -417,7 +417,7 @@
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block"><div class="form__title">Комментарий</div>
-                                <textarea class="form__input form__input--textarea" name="comment" required></textarea>
+                                <textarea class="form__input form__input--textarea input--error" name="comment"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -513,10 +513,21 @@
             </li>
         </ul>
     </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="./js/beat.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/team.js"></script>
     <script src='./js/review.js'></script>
     <script src='./js/form.js'></script>
+    <script src="./js/modal.js"></script>
+    <div class="modal" id="modal">
+        <div class="modal__container"><div class="modal__content">Сообщение отправлено</div>
+    <div class="modal__button-container">
+        <a href="" class="button app-close-modal">Закрыть</a>
+    </div></div>
+    </div>
 </body>
 </html>
