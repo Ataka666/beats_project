@@ -9,8 +9,13 @@
     padding: 10px 20px;
     width: auto;
 }
+.modal__button-container{
+    display: flex;
+    justify-content: center;
+}
 .button--modal{
-    margin: 0px 20px;
+    margin: 20px 0px;
+
 }
 .input--error{
     border-color: yellow;

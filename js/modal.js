@@ -36,7 +36,8 @@ $(".form").submit(e=>{
         content.text(data.message);
         $.fancybox.open({
             src:"#modal",
-            class:"inline"
+            class:"inline",
+            leftRatio: 0.5
         })
     },
     error: data=>{
@@ -46,10 +47,13 @@ $(".form").submit(e=>{
         modal.css('color', 'red');
         $.fancybox.open({
         src:"#modal",
-        class:"inline"
+        class:"inline",
+        leftRatio: 0.5
         })
+
     }
 })
+$('.form').trigger("reset")
    }
 })
 $(".app-close-modal").click(e=>{
