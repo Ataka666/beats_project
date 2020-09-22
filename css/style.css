@@ -1469,9 +1469,22 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
 }
 
+.fancybox-content {
+  padding: 20px;
+}
+
 .modal {
   display: none;
   font-family: "Play";
+}
+
+.modal__container {
+  padding: 10px 20px;
+  width: auto;
+}
+
+.button--modal {
+  margin: 20px 0px;
 }
 
 .input--error {

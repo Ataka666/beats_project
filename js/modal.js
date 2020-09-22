@@ -40,12 +40,13 @@ $(".form").submit(e=>{
         })
     },
     error: data=>{
-        const message= data.responseJSON.message;
+        console.log(data)
+        const message = data.responseJSON.message;
         content.text(message);
         modal.css('color', 'red');
         $.fancybox.open({
-            src:"#modal",
-            class:"inline"
+        src:"#modal",
+        class:"inline"
         })
     }
 })

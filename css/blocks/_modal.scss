@@ -1,6 +1,16 @@
+.fancybox-content{
+    padding: 20px;
+}
 .modal{
     display: none;
     font-family: 'Play';
+}
+.modal__container{
+    padding: 10px 20px;
+    width: auto;
+}
+.button--modal{
+    margin: 0px 20px;
 }
 .input--error{
     border-color: yellow;
