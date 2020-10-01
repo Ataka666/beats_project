@@ -1,0 +1,44 @@
+.beat__setting{
+    position: relative;
+    align-self: flex-start;
+    &:hover{
+        .beat__setting-list{
+            opacity: 1;
+            transition: 0.3s opacity;
+            display: flex;
+            flex-direction: column;
+            background: #FFFFFF;
+            justify-content: space-around;
+        }
+    }
+}
+.beat__setting-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91px;
+    width: 91px;
+    background: #9A9A9A;  
+}
+.setting{
+    width: 42px;
+    height: 42px;
+}
+
+.beat__setting-list{
+    min-width: 273px;
+    min-height: 294px;
+    position: absolute;
+    left: 91px;
+    top: 0;
+    display: none;
+    opacity: 0;
+}
+.beat__setting-item{
+    display: flex;
+    justify-content: space-around;
+}
+.beat__setting-logo{
+    width: 32px;
+    height: 32px;
+}

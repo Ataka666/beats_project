@@ -1,0 +1,85 @@
+
+.color{
+    background: url("./../image/color-bg.png") center top no-repeat;
+    object-fit: cover;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+.color__title{
+    position: absolute;
+    top:10%;
+    left: 10%;
+    color: white;
+}
+.color__list{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    z-index: 110;
+    justify-content: flex-end;
+    visibility: visible;
+}
+.color__item{
+    color: white;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    align-items: stretch;
+    justify-content: flex-end;
+    &--active{
+       @include phone{ 
+        flex-shrink: 0;
+        order: 1;
+        width: 100%;}
+        .color__cross{
+            width: 13px;
+    height: 13px;}
+    }
+}
+.color__link{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 102px;
+    height: 100%;
+    align-items: flex-end;
+    &--silver{
+        background-color:#999999;
+    };
+    &--black{
+        background-color:#151515;
+        
+    };
+    &--red{
+        background-color:#E01F3C;
+    }
+}
+.color__name{
+    font-size: 36px;
+    color: #fff;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding-bottom: 34px;
+}
+.color__description{
+    position: relative;
+    transition: width 0.3s;
+    width: 0px;
+    background: #333537;
+    opacity: 0.9;
+p{
+    padding: 35px;
+    text-align: left;
+}
+}
+.color__cross{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}

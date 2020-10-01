@@ -1,0 +1,50 @@
+.player{
+    position: relative;
+}
+.player__start{
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    top: 30%;
+    border: none;
+    left: 10px;
+    cursor: pointer;
+}
+.player__play{
+    display: none;
+}
+.active{
+    display: block;
+    height: 10px;
+    width: 16px;
+}
+.player__controls{
+    position: absolute;
+    bottom: 0;
+    width: 660px;
+    height: 34px;
+    background: black;  
+}
+.player__playback{
+    position: relative;
+    width: 440px;
+    height: 4px;
+    background: #E01F3D;
+    top: 50%;
+    left: 57px;
+}
+.player__playback-button{
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    background: #E01F3D;
+    border-radius: 50%;
+    border: none;
+    top: -5px
+}
+.player__duration{
+    position: absolute;
+    right:13px
+}
